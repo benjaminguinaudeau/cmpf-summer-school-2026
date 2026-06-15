@@ -1,0 +1,389 @@
+/*-- scss:defaults --*/
+
+// Palette CSMaP (alignée sur csmap_talk.qmd)
+$csmap-blue:     #0D4F77;
+$csmap-slate:    #708090;
+$csmap-lightblue:#B0C4DE;
+$csmap-purple:   #E62C4F;
+$csmap-dark:     #111111;
+$csmap-bg:       #ffffff;
+$csmap-off:      #f7f7f7;
+
+// Bootstrap/reveal overrides
+$primary:   $csmap-blue;
+$secondary: $csmap-slate;
+$accent:    $csmap-purple;
+$body-color: #1a1a1a;
+$body-bg:    $csmap-bg;
+$link-color: $csmap-blue;
+
+// Typographie — sans serif
+$font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-font: "Inter", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-color: $csmap-blue;
+$presentation-heading-font-weight: 700;
+
+// TIGHTENED font sizes for 720px viewport
+$presentation-h1-font-size: 2.2em;
+$presentation-h2-font-size: 1.5em;
+$presentation-h3-font-size: 1.1em;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+.reveal {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.reveal .slide-background {
+  background-color: $csmap-bg;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: "Inter", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  color: $csmap-blue;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.reveal h1 { font-size: 2.2em; }
+.reveal h2 { font-size: 1.5em; margin-bottom: 0.3em; }
+.reveal h3 { font-size: 1.1em; color: $csmap-blue; }
+
+// Section title slides (dark navy)
+.reveal section[data-background-color="#0D4F77"] {
+  color: white;
+  h1, h2, h3 { color: white; }
+  strong { color: white; }
+  em, i { color: $csmap-lightblue; }
+  blockquote { background: rgba(255,255,255,0.1); border-left-color: $csmap-lightblue; color: white; }
+  ul li::before { color: $csmap-lightblue; }
+  ol li::marker { color: $csmap-lightblue; }
+}
+
+// Emphasis / accents
+.reveal strong { color: $csmap-blue; font-weight: 700; }
+.reveal em, .reveal i { color: $csmap-slate; }
+
+// ========== TIGHTENED spacing for 720px viewport ==========
+
+// Tables — compact
+.reveal table {
+  font-size: 0.7em;
+  border-collapse: collapse;
+  margin: 0.5em auto;
+}
+
+.reveal table th {
+  background-color: $csmap-blue;
+  color: white;
+  padding: 0.35em 0.8em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.reveal table td {
+  padding: 0.35em 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+
+.reveal table tr:nth-child(even) td {
+  background-color: $csmap-off;
+}
+
+// Blockquotes — compact
+.reveal blockquote {
+  border-left: 4px solid $csmap-purple;
+  padding: 0.4em 1em;
+  font-style: italic;
+  background: $csmap-off;
+  margin: 0.6em 0;
+  font-size: 0.85em;
+  color: #333;
+  width: auto;
+  box-shadow: none;
+}
+
+// Bullet points — tighter spacing
+.reveal ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+.reveal ul li {
+  position: relative;
+  margin-bottom: 0.25em;
+}
+
+.reveal ul li::before {
+  content: "▸";
+  color: $csmap-blue;
+  font-weight: 700;
+  position: absolute;
+  left: -1.2em;
+  top: 0;
+}
+
+.reveal ol {
+  padding-left: 1.5em;
+}
+
+.reveal ol li {
+  margin-bottom: 0.25em;
+}
+
+.reveal ol li::marker {
+  color: $csmap-blue;
+  font-weight: 700;
+}
+
+// Images — constrain height in columns
+.reveal .columns img {
+  max-height: 380px;
+  object-fit: contain;
+}
+
+// Callouts
+.reveal .callout {
+  border-radius: 4px;
+  margin: 0.6em 0;
+}
+
+.reveal .callout-note {
+  border-left-color: $csmap-blue !important;
+}
+
+// Fragment highlights
+.reveal .fragment.highlight-current-red.current-fragment {
+  color: $csmap-purple;
+}
+
+// Footer / slide number
+.reveal .slide-number {
+  color: $csmap-slate;
+  font-size: 0.7em;
+}
+
+.reveal .footer {
+  color: $csmap-slate;
+  font-size: 0.65em;
+}
+
+// Image handling — caption style
+.reveal figure figcaption,
+.reveal .figure-caption {
+  font-size: 0.7em;
+  color: $csmap-slate;
+  text-align: left;
+  margin-top: 0.2em;
+  font-style: italic;
+}
+
+// Code
+.reveal code {
+  color: $csmap-purple;
+  background: $csmap-off;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.85em;
+}
+
+// Takeaway callout boxes (result slides)
+.reveal .takeaway {
+  background: $csmap-blue;
+  color: white;
+  padding: 0.6em 1.2em;
+  margin-top: 0.6em;
+  text-align: center;
+  font-size: 1.05em;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+// "Definition" box
+.reveal .definition {
+  background: rgba(230, 44, 79, 0.08);
+  border: 1.5px solid $csmap-purple;
+  border-radius: 6px;
+  padding: 0.8em 1.2em;
+  margin: 0.5em 0;
+}
+
+// ========== TikTok placeholder system ==========
+// In the browser (live), the .tiktok-live div shows, placeholder hidden.
+// The PDF script injects CSS to invert this.
+.reveal .tiktok-placeholder {
+  display: none; // hidden in live HTML
+  width: 320px;
+  height: 380px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1em;
+  color: #555;
+  text-align: center;
+  line-height: 380px;
+}
+
+// Constrain TikTok embed iframes to fit within slides
+.reveal .tiktok-live {
+  overflow: hidden;
+
+  blockquote.tiktok-embed {
+    max-height: 500px !important;
+    overflow: hidden;
+  }
+
+  iframe {
+    max-height: 500px !important;
+    transform-origin: top center;
+    transform: scale(0.85);
+  }
+}
+
+// ========== Local TikTok-style card (replaces iframe embeds) ==========
+.reveal .tt-card {
+  display: flex;
+  gap: 1em;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 0.9em;
+  max-width: 720px;
+  margin: 0.4em auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  align-items: stretch;
+}
+
+.reveal .tt-card video {
+  width: 253px;
+  height: 451px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #000;
+  flex: 0 0 253px;
+}
+
+.reveal .tt-card .tt-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5em;
+  color: #1a1a1a;
+  line-height: 1.35;
+}
+
+.reveal .tt-card .tt-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45em;
+  margin-bottom: 0.15em;
+}
+
+.reveal .tt-card .tt-handle {
+  font-weight: 700;
+  color: $csmap-blue;
+  font-size: 1.1em;
+}
+
+.reveal .tt-card .tt-verified {
+  color: #20D5EC;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+.reveal .tt-card .tt-nickname {
+  color: $csmap-slate;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-bottom: 0.15em;
+}
+
+.reveal .tt-card .tt-date {
+  color: $csmap-slate;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.reveal .tt-card .tt-desc {
+  color: #222;
+  margin: 0 0 0.6em 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  font-style: normal;
+}
+
+.reveal .tt-card .tt-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9em;
+  margin-top: auto;
+  padding-top: 0.4em;
+  border-top: 1px solid #eee;
+  color: $csmap-dark;
+}
+
+.reveal .tt-card .tt-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-weight: 600;
+}
+
+.reveal .tt-card .tt-stat .tt-icon {
+  color: $csmap-purple;
+  font-size: 1.05em;
+}
+
+// ========== Vertical plan (Acte 1 / 2 / 3 with icons) ==========
+.reveal .plan-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  margin-top: 0.6em;
+}
+
+.reveal .plan-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  padding: 0.6em 1em;
+  border: 1.5px solid rgba(13, 79, 119, 0.25);
+  border-left: 5px solid $csmap-blue;
+  background: rgba(13, 79, 119, 0.04);
+  border-radius: 6px;
+}
+
+.reveal .plan-icon {
+  font-size: 2.2em;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+.reveal .plan-body {
+  flex: 1;
+
+  p {
+    margin: 0;
+    font-size: 0.85em;
+    color: $csmap-dark;
+  }
+}
+
+// Plan titles (replaces h4 to avoid Pandoc <section> nesting)
+.reveal .plan-title {
+  display: block;
+  margin: 0 0 0.1em 0;
+  color: $csmap-blue;
+  font-size: 1em;
+  font-weight: 700;
+}
