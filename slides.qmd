@@ -32,9 +32,11 @@ editor:
 ## Open questions {background-color="#0D4F77" .center}
 
 ::: {style="color: white; font-size: 0.95em;"}
+::: {.incremental}
 - Did your last big story reach its audience mainly through a channel **you control**?
 - Have you ever **framed** a story to maximize its reach on a specific platform?
-- Do you regularly **question your reach figures** when a story over- or under-performs?
+- Have you already **questioned your reach figures** when a story over- or under-performed?
+:::
 :::
 
 ---
