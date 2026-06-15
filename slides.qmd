@@ -51,6 +51,28 @@ editor:
 
 ---
 
+## Three affordances of the rec-sys platforms
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.incremental}
+- **Mobile-first** consumption
+- **Short** video clips
+- **Recommender system** curation
+:::
+:::
+
+::: {.column width="50%"}
+![](assets/recommender_system.png){width="90%" fig-align="center"}
+:::
+:::
+
+::: {.fragment style="margin-top: 0.8em; text-align: center; font-style: italic;"}
+Combined, these affordances set up a dialectic between **short format** and the **recommender system**.
+:::
+
+---
+
 ## Subscription vs. recommender-based platforms
 
 ```{=html}
@@ -88,29 +110,7 @@ The relationship with the audience **changes hands**.
 
 ---
 
-## Three affordances of the rec-sys platforms
-
-::: {.columns}
-::: {.column width="50%"}
-::: {.incremental}
-- **Mobile-first** consumption
-- **Short** video clips
-- **Recommender system** curation
-:::
-:::
-
-::: {.column width="50%"}
-![](assets/recommender_system.png){width="90%" fig-align="center"}
-:::
-:::
-
-::: {.fragment style="margin-top: 0.8em; text-align: center; font-style: italic;"}
-Combined, these affordances set up a dialectic between **short format** and the **recommender system**.
-:::
-
----
-
-## The feedback loop between format and algorithm
+## The dialectic between format and algorithm
 
 ```{=html}
 <div style="display: flex; align-items: center; justify-content: center; gap: 1.5em; margin-top: 1.2em;">
