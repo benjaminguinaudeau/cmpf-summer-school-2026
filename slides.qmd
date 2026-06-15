@@ -416,3 +416,32 @@ Theoretically 4.3B IDs/second; in practice the search space narrows to ~400k can
 ::: {.fragment style="text-align: center; font-size: 0.95em; margin-top: 0.4em;"}
 Random coverage stabilizes around **80%**; roughly **1%** of content and **3%** of consumption is political.
 :::
+
+```{=html}
+<script>
+(function () {
+  function addQR() {
+    var t = document.querySelector('#title-slide');
+    if (!t) { return setTimeout(addQR, 100); }
+    if (t.querySelector('.qr-slides')) return;
+    var wrap = document.createElement('div');
+    wrap.className = 'qr-slides';
+    wrap.style.cssText = 'text-align:center; color:white; margin: 1.1em auto 0;';
+    var qr = document.createElement('img');
+    qr.src = 'assets/cmpf2026-qr.svg';
+    qr.style.cssText = 'width:150px; height:150px; background:white; padding:8px; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.4); display:inline-block;';
+    var lbl = document.createElement('div');
+    lbl.innerHTML = '<a href="https://tinyurl.com/cmpf2026" style="color:#B0C4DE; text-decoration:none; font-weight:700;">tinyurl.com/cmpf2026</a>';
+    lbl.style.cssText = 'margin-top:0.45em; font-size:0.62em;';
+    wrap.appendChild(qr);
+    wrap.appendChild(lbl);
+    t.appendChild(wrap);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addQR);
+  } else {
+    setTimeout(addQR, 50);
+  }
+})();
+</script>
+```
