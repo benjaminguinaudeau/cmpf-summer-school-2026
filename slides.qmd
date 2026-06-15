@@ -32,9 +32,9 @@ editor:
 ## Open questions {background-color="#0D4F77" .center}
 
 ::: {style="color: white; font-size: 0.95em;"}
-- Thinking of the recent stories you have published, through which **channel** did each story reach its audience?
-- When writing a story, can you form an **expectation** about the channel on which it will find its audience? Do you sometimes **frame** a story to maximize its reach on a specific platform?
-- How often do you look **skeptically** at your reach figures and try to understand why a story **over- or under-performed**?
+- Through which **channel** did your recent stories reach their audience?
+- Do you anticipate that channel in advance, or **frame** a story to maximize its reach on a given platform?
+- How often do you question your **reach figures** and ask why a story **over- or under-performed**?
 :::
 
 ---
