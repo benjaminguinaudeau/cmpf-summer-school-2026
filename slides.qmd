@@ -174,6 +174,16 @@ Guinaudeau, Rutherford, Greenfield, Messing & Tucker (CSMaP @ NYU)
 
 ---
 
+## How much have we collected?
+
+![](assets/csmap/_daily_count_us.png){fig-align="center" width="90%"}
+
+::: {.fragment style="text-align: center; font-style: italic; font-size: 0.9em; margin-top: 0.3em;"}
+A near-complete census: **3.6B US posts** between Oct. 2024 and Oct. 2025.
+:::
+
+---
+
 ## Topic-specific production
 
 ![](assets/csmap/label_aggregate.png){fig-align="center" width="92%"}
@@ -222,21 +232,6 @@ No clear algorithmic or demand bias toward the extremes; **moderate content is f
 
 ---
 
-## Which producers drive the conversation?
-
-::: {style="text-align: center; font-size: 1.15em; margin-top: 1.5em;"}
-Traditional news outlets now face competition from a **new type of producer**:\
-**influencers and aggregators**.
-:::
-
----
-
-## The new attention elite *in the US*
-
-![](assets/csmap/top_producers.png){fig-align="center" width="82%"}
-
----
-
 ## So how to go viral?
 
 ![](assets/meme_wrong_question.png){.fragment fig-align="center" width="62%"}
@@ -257,17 +252,15 @@ Agenda-setting moves **one level up**: not *which stories*, but **which forms an
 
 ---
 
-## The American attention dream
-
-*How the platform manages the distribution of attention:*
+## The attention dream
 
 ::: {.incremental}
-- Manufacture a few **high-attention producers**, so that becoming famous looks **feasible** to everyone.
-- Spread the remaining attention **broadly enough** to keep producers **producing**.
+- TikTok promises that **any producer** can earn attention, as long as their content is **good**.
+- It has been celebrated as a **beacon democratizing content production**.
 :::
 
-::: {.fragment .fade-up style="margin-top: 1em; text-align: center; font-size: 1.05em;"}
-What most producers actually receive are the **super-crumbs**.
+::: {.fragment .fade-up style="margin-top: 1em; text-align: center; font-style: italic; font-size: 1.05em;"}
+A meritocracy of attention?
 :::
 
 ---
@@ -290,6 +283,36 @@ What most producers actually receive are the **super-crumbs**.
 ::: {.fragment style="text-align: center; font-size: 1.05em; margin-top: 0.3em;"}
 A small **elite of producers** captures the overwhelming share of attention.
 :::
+
+---
+
+## The real American attention dream
+
+*How the platform sustains the illusion:*
+
+::: {.incremental}
+- Manufacture a few **high-attention producers**, so that becoming famous looks **feasible** to everyone.
+- Spread the remaining attention **broadly enough** to keep producers **producing**.
+:::
+
+::: {.fragment .fade-up style="margin-top: 1em; text-align: center; font-size: 1.05em;"}
+What most producers actually receive are the **super-crumbs**.
+:::
+
+---
+
+## Which producers drive the conversation?
+
+::: {style="text-align: center; font-size: 1.15em; margin-top: 1.5em;"}
+Traditional news outlets now face competition from a **new type of producer**:\
+**influencers and aggregators**.
+:::
+
+---
+
+## The new attention elite *in the US*
+
+![](assets/csmap/top_producers.png){fig-align="center" width="82%"}
 
 ---
 
