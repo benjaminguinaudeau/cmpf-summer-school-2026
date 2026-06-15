@@ -32,9 +32,9 @@ editor:
 ## Open questions {background-color="#0D4F77" .center}
 
 ::: {style="color: white; font-size: 0.95em;"}
-- Through which **channel** did your recent stories reach their audience?
-- Do you anticipate that channel in advance, or **frame** a story to maximize its reach on a given platform?
-- How often do you question your **reach figures** and ask why a story **over- or under-performed**?
+- Did your last big story reach its audience mainly through a channel **you control**?
+- Have you ever **framed** a story to maximize its reach on a specific platform?
+- Do you regularly **question your reach figures** when a story over- or under-performs?
 :::
 
 ---
@@ -426,15 +426,15 @@ Random coverage stabilizes around **80%**; roughly **1%** of content and **3%** 
     if (t.querySelector('.qr-slides')) return;
     var wrap = document.createElement('div');
     wrap.className = 'qr-slides';
-    wrap.style.cssText = 'text-align:center; color:white; margin: 1.1em auto 0;';
-    var qr = document.createElement('img');
-    qr.src = 'assets/cmpf2026-qr.svg';
-    qr.style.cssText = 'width:150px; height:150px; background:white; padding:8px; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.4); display:inline-block;';
+    wrap.style.cssText = 'text-align:center; color:white; margin: 0.4em auto 0;';
     var lbl = document.createElement('div');
     lbl.innerHTML = '<a href="https://tinyurl.com/cmpf2026" style="color:#B0C4DE; text-decoration:none; font-weight:700;">tinyurl.com/cmpf2026</a>';
-    lbl.style.cssText = 'margin-top:0.45em; font-size:0.62em;';
-    wrap.appendChild(qr);
+    lbl.style.cssText = 'margin-bottom:0.35em; font-size:0.65em;';
+    var qr = document.createElement('img');
+    qr.src = 'assets/cmpf2026-qr.svg';
+    qr.style.cssText = 'background:white; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.4); display:inline-block;';
     wrap.appendChild(lbl);
+    wrap.appendChild(qr);
     t.appendChild(wrap);
   }
   if (document.readyState === 'loading') {
